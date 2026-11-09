@@ -1,0 +1,12 @@
+# Visual Studio / build
+.vs/
+bin/
+obj/
+dist/
+*.user
+*.suo
+*.pdb
+*.cache
+*.vsidx
+CodeChunks.db
+SemanticSymbols.db

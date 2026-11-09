@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>SpaceInvaders</AssemblyName>
+    <RootNamespace>spaceinvaders3</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+
+  <!-- Copia a pasta Assets para ao lado do .exe em qualquer build/publish -->
+  <ItemGroup>
+    <Content Include="Assets\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
